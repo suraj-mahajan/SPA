@@ -1,0 +1,43 @@
+
+ 
+     <div class="panel panel-default">
+       <div class="panel-heading">
+          Laptop Master
+       </div>
+       <div class="panel-body">
+          <a href="JavaScript:void(0)" class="btn btn-default" ng-click="AddNew()">Add New</a>
+      
+      <div class="panel panel-default table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>RAM</th>
+              <th>OS</th>
+              <th>Hard Disk</th>
+              <th colspan="2">Controls</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat=" obj in objects">
+              <td>{{obj.name}}</td>
+              <td>{{obj.RAM}}</td>
+              <td>{{obj.OS}}</td>
+              <td>{{obj.HDD}}</td>
+              <td>
+                <button ng-click="edit(obj)" class="btn btn-sm btn-primary">
+                  Edit
+                </button>
+              </td>
+              <td>
+                <button ng-click="delete(obj)" class="btn btn-sm btn-primary">
+                  Delete
+                </button>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+       </div>
+     </div>
